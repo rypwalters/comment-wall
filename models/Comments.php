@@ -30,7 +30,7 @@ class Comments extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'date_created'], 'required'],
+            [['name', 'website', 'date_created'], 'required'],
             [['date_created'], 'safe'],
             [['name'], 'string', 'max' => 80],
             [['comments'], 'string', 'max' => 255],
